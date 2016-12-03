@@ -11,8 +11,23 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-
-
+	@IBOutlet var zone0: [UITextField]!
+	
+	@IBOutlet var zone1: [UITextField]!
+	
+	@IBOutlet var zone2: [UITextField]!
+	
+	@IBOutlet var zone3: [UITextField]!
+	
+	@IBOutlet var zone4: [UITextField]!
+	
+	@IBOutlet var zone5: [UITextField]!
+	
+	@IBOutlet var zone6: [UITextField]!
+	
+	@IBOutlet var zone7: [UITextField]!
+	
+	@IBOutlet var zone8: [UITextField]!
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -28,6 +43,8 @@ class ViewController: UIViewController {
 		
 		let sudokuSolve = Sudoku(sudokuTable: sudoku)
 		sudokuSolve.solveSudokuProblem()
+		
+		zone0[0].text = ("\(sudoku[0][0])")
 		
 	}
 
