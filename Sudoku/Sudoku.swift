@@ -13,7 +13,7 @@ class Sudoku: NSObject {
 	
 	private var _sudokuTable: [[Int]]
 	
-	var rowIndex = 0
+	
 	var sudokuTable:[[Int]] {
 		return _sudokuTable
 	}
@@ -26,7 +26,7 @@ class Sudoku: NSObject {
 	
 	
 	func solveSudokuProblem() {
-		
+		let rowIndex = 0
 		let columnIndex = 0
 		if !solve(rowIndex: rowIndex, columnIndex: columnIndex) {
 			
